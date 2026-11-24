@@ -1,0 +1,55 @@
+{
+  "name": "dsh-phone-link",
+  "version": "1.0.0",
+  "description": "Phone control for DeepSeek Harness: a scannable QR panel inside DSH, a public tunnel so the phone can be on any network, and phone tasks that continue your most recently used session.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "phone",
+    "mobile",
+    "remote",
+    "qr",
+    "cloudflare-tunnel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whx060401/dsh-phone-link.git"
+  },
+  "homepage": "https://github.com/Whx060401/dsh-phone-link#readme",
+  "bugs": {
+    "url": "https://github.com/Whx060401/dsh-phone-link/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "public/index.html",
+    "vendor/qrcode-generator.cjs",
+    "LICENSE",
+    "THIRD-PARTY-NOTICES.md",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
