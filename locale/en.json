@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Phone bridge",
+    "description": "Lets a phone send work to this DSH and receive each finished result back, over the local network or through an automatic Cloudflare tunnel so the phone can be on any network. By default the phone continues the most recently used session in your workspace, so it works in the conversation already open on the computer; set followActive to false for a dedicated session. The DSH composer area shows the phone QR code directly, and http://127.0.0.1:<port>/link also offers the public and LAN QR codes. The public address changes on restart, traffic passes through Cloudflare, the link token grants control of this computer, and phone tasks run with this computer's DSH permissions."
+  }
+}
