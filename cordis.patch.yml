@@ -1,0 +1,7 @@
+- insert:
+    - id: phone-bridge
+      name: dsh-phone-link
+      config:
+        port: 8765
+        title: 手机遥控
+        tunnel: true
